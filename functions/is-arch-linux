@@ -1,3 +1,3 @@
 #!/usr/bin/env zsh
 ##? returns 0 if the OS is Arch Linux
-grep -q 'Arch Linux' /etc/issue
+[[ -e /etc/issue ]] && grep -q 'Arch Linux' /etc/issue
