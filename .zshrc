@@ -24,3 +24,6 @@ source ${zsh_plugins}.zsh
 # Cycle through history based on characters already typed on the line
 bindkey "$key_info[Up]" history-substring-search-up
 bindkey "$key_info[Down]" history-substring-search-down
+
+# Corrections
+setopt CORRECT
