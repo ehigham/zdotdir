@@ -11,13 +11,13 @@ zstyle ':antidote:plugin:*' defer-options '-p'
 #
 # Zephyr
 #
+zstyle ':zephyr:plugin:editor' key-bindings vi
 zstyle ':zephyr:plugin:prompt' theme zephyr
 zstyle ':zephyr:plugin:history' histsize 50000
 
 #
 # Custom
 #
-
 noexpand=(
   ls
   grep
