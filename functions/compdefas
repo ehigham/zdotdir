@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+##? derive completions from another command
+##? See https://unix.stackexchange.com/questions/496379/treat-command-like-another-for-completion-purposes
+if (($+_comps[$1])); then
+    compdef $_comps[$1] ${^@[2,-1]}=$1
+fi

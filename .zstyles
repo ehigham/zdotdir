@@ -1,0 +1,30 @@
+#
+# .zstyles - zstyle settings for features/plugins that need them.
+#
+
+#
+# Antidote
+#
+
+zstyle ':antidote:bundle' use-friendly-names 'yes'
+zstyle ':antidote:plugin:*' defer-options '-p'
+
+#
+# Zephyr
+#
+
+zstyle ':zephyr:plugin:prompt' theme zephyr
+zstyle ':zephyr:plugin:history' histsize 50000
+
+#
+# Custom
+#
+
+noexpand=(
+  ls
+  grep
+  gpg
+  vi
+  z
+)
+zstyle ':zsh_custom:plugin:abbreviations' noexpand $noexpand

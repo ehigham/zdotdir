@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+##? overload powerlevel10k setup.
+##? See https://github.com/mattmc3/zdotdir/blob/99788c6d02831ea6bfe29cf39d15cd6c56416270/functions/prompt_p10k_setup
+if [[ -n "$1" ]]; then
+    local -a configs=($ZDOTDIR/themes/$1.p10k.zsh(N))
+    (( $#configs )) && source $configs[1]
+fi
+
+prompt_powerlevel10k_setup

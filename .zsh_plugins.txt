@@ -1,0 +1,47 @@
+# Load near top to get p10k's prompt
+#$ZSH_CUSTOM path:plugins/p10k-instaprompt
+
+
+## Custom functions (including conditionals used herein)
+mattmc3/zephyr path:plugins/zfunctions
+
+
+## Themes
+romkatv/powerlevel10k   kind:fpath
+
+
+## zsh-utils
+belak/zsh-utils path:editor
+
+
+## Zephyr
+mattmc3/zephyr path:plugins/confd
+mattmc3/zephyr path:plugins/string
+mattmc3/zephyr path:plugins/macos conditional:is-macos
+mattmc3/zephyr path:plugins/history
+mattmc3/zephyr path:plugins/directory
+mattmc3/zephyr path:plugins/color
+
+
+## Misc
+$ZSH_CUSTOM path:plugins/broad
+$ZSH_CUSTOM path:plugins/pacman conditional:is-arch-linux
+
+
+## Syntax Highlighting
+zdharma-continuum/fast-syntax-highlighting kind:defer
+
+
+## Editor
+ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
+
+
+## Completions
+zsh-users/zsh-completions   kind:fpath path:src
+carlosedp/mill-zsh-completions
+mattmc3/zephyr  path:plugins/completion
+
+
+## popular core plugins should be loaded at the end
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search
