@@ -21,8 +21,6 @@ fi
 
 source ${zsh_plugins}.zsh
 
-autoload -Uz compinit && compinit
-
 # Cycle through history based on characters already typed on the line
 bindkey "$key_info[Up]" history-substring-search-up
 bindkey "$key_info[Down]" history-substring-search-down

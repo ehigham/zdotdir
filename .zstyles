@@ -12,7 +12,6 @@ zstyle ':antidote:plugin:*' defer-options '-p'
 #
 # Zephyr
 #
-
 zstyle ':zephyr:plugin:prompt' theme zephyr
 zstyle ':zephyr:plugin:history' histsize 50000
 
