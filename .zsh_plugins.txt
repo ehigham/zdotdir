@@ -1,7 +1,6 @@
 # Load near top to get p10k's prompt
 #$ZSH_CUSTOM path:plugins/p10k-instaprompt
 
-
 ## Custom functions (including conditionals used herein)
 mattmc3/zephyr path:plugins/zfunctions
 
@@ -37,10 +36,9 @@ ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
 
 
 ## Completions
-zsh-users/zsh-completions   kind:fpath path:src
+zsh-users/zsh-completions       kind:fpath path:src
 carlosedp/mill-zsh-completions
-mattmc3/zephyr  path:plugins/completion
-
+mattmc3/zephyr                  path:plugins/completion
 
 ## popular core plugins should be loaded at the end
 zsh-users/zsh-autosuggestions kind:defer

@@ -48,9 +48,6 @@ if [[ is-mac ]]; then
   export SHELL_SESSIONS_DISABLE=1 # Make Apple Terminal behave.
 fi
 
-# Regional settings
-export LANG='en_US.UTF-8'
-
 # Misc
 export KEYTIMEOUT=1
 

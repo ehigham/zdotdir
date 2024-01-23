@@ -1,8 +1,2 @@
-#comdef millw
-
-__millw() {
-    echo 'hello'
-    compdefas mill millw
-}
-
-__millw "$@"
+#compdef millw=mill
+compdef _mill millw
