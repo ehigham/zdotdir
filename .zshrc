@@ -21,9 +21,10 @@ fi
 
 source ${zsh_plugins}.zsh
 
-# Cycle through history based on characters already typed on the line
-bindkey "$key_info[Up]" history-substring-search-up
-bindkey "$key_info[Down]" history-substring-search-down
+# zsh-history-substring-search configuration
+bindkey '^[[A' history-substring-search-up # or '\eOA'
+bindkey '^[[B' history-substring-search-down # or '\eOB'
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # Corrections
 setopt CORRECT

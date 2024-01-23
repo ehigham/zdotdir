@@ -30,6 +30,3 @@ zstyle ':zsh_custom:plugin:abbreviations' noexpand $noexpand
 #
 # completions
 #
-zstyle ':completion:*' completer _complete _match _approximate
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*:approximate:*' max-errors 1 numeric
