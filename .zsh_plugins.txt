@@ -20,7 +20,8 @@ mattmc3/zephyr path:plugins/color
 
 ## Misc
 $ZSH_CUSTOM path:plugins/broad
-$ZSH_CUSTOM path:plugins/pacman conditional:is-arch-linux
+$ZSH_CUSTOM path:plugins/pacman     conditional:is-arch-linux
+$ZSH_CUSTOM path:plugins/ssh-agent  conditional:is-arch-linux
 
 
 ## Syntax Highlighting
