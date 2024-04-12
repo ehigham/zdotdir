@@ -10,7 +10,8 @@ for arg in ${words[@]}; do
   request=(${request[@]} --bash-completion-word $arg)
 done
 
-IFS=$'\n' completions=($( /home/edmund/.ghcup/bin/stack "${request[@]}" ))
+local program=$(which stack)
+IFS=$'\n' completions=($($program "${request[@]}" ))
 
 for word in $completions; do
   local -a parts
