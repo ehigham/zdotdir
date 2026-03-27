@@ -3,3 +3,4 @@
 #
 
 alias vi=vim
+alias hx=helix

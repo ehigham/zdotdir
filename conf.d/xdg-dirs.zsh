@@ -1,3 +1,5 @@
+# See https://wiki.archlinux.org/title/XDG_Base_Directory
+
 # cargo
 export CARGO_HOME="${XDG_DATA_HOME}/cargo"
 
@@ -12,8 +14,8 @@ export GOMODCACHE="${XDG_CACHE_HOME}/go/mod"
 export GHCUP_USE_XDG_DIRS=1
 export STACK_XDG=1
 
-# pyenv
-export PYENV_ROOT="${XDG_DATA_HOME}/pyenv"
+# maven
+export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
 
 # npm
 # see npm config ls -l | grep /

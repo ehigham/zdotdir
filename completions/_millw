@@ -1,2 +1,0 @@
-#compdef millw=mill
-compdef _mill millw

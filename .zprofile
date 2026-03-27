@@ -38,7 +38,7 @@ ld_library_path=(
 export PATH
 export LD_LIBRARY_PATH
 
-export EDITOR=vim
+export EDITOR=helix
 export GIT_EDITOR=$EDITOR
 export VISUAL=code
 export PAGER=less
